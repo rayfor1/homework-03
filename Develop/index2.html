@@ -22,10 +22,12 @@
                 <textarea readonly id="password" placeholder="Your Secure Password"
                     aria-label="Generated Password"></textarea>
             </div>
-            <!-- added a form to collect user info for numbers and symbols -->
-            How many characters would you like your password to be? <input type="number" id="charLength" value="15" min="8" max="128" /><br />
-            Do you want to include numbers?: <input type="checkbox" id="number" />
-            Do you want to include special characters?: <input type="checkbox" id="symbol" /><br />
+            <!-- added a form to get user info for numbers and symbols -->
+            How many characters? <input type="number" id="charNum" value="12" min="8" max="100" /><br />
+            Do you want numbers?: <input type="checkbox" id="number" />
+            Do you want symbols?: <input type="checkbox" id="symbol" /><br />
+            <button id="submit">Submit</button><br />
+            Your Password: <input type="text" id="yourPw" size="80" />
             <div class="card-footer">
                 <button id="generate" class="btn">Generate Password</button>
             </div>
